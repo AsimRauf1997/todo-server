@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:true}))
 const mongoose = require('mongoose')
 const dotenv = require('dotenv').config()
 const connectDB = require('./config/db')
-const port  = process.env.PORT
+const port  = process.env.PORT || 5000
 
 connectDB()
 
