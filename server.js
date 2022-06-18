@@ -15,4 +15,5 @@ const port  = process.env.PORT
 connectDB()
 
 app.use('/api/todo',todoRoutes)
+app.use('/',)
 app.listen(port,()=> console.log(`Server Running at port ${port}`))
